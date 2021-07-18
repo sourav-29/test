@@ -17,3 +17,4 @@ FOREIGN KEY (client_no) REFERENCES Client_Master(client_no),FOREIGN KEY (salesma
 INSERT INTO `client_master`(`client_no`, `name`, `address`, `city`, `state`, `pincode`, `bal_due`) VALUES ('C001','Vandana  Jaiswal','Pali hill','Madras', 'Tamil Nadu',780001,0);
 INSERT INTO `client_master`(`client_no`, `name`, `address`, `city`, `state`, `pincode`, `bal_due`) VALUES ('C002','Ivan Bayross','Bandra','Bombay','Maharashtra',400054, 15000);
 
+*modified by sourav-29*
