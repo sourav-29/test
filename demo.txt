@@ -13,3 +13,8 @@ pincode int , sal_amt int,tgt_to_get int);
 CREATE TABLE Sales_order (s_order_no varchar(10) PRIMARY KEY,
 s_order_date date,client_no varchar(20), dely_addr varchar(40),salesman_no varchar(20),dely_date date,order_status varchar(20),
 FOREIGN KEY (client_no) REFERENCES Client_Master(client_no),FOREIGN KEY (salesman_no ) REFERENCES Salesman_Master(salesman_no));
+
+INSERT INTO `client_master`(`client_no`, `name`, `address`, `city`, `state`, `pincode`, `bal_due`) VALUES ('C001','Vandana  Jaiswal','Pali hill','Madras', 'Tamil Nadu',780001,0);
+INSERT INTO `client_master`(`client_no`, `name`, `address`, `city`, `state`, `pincode`, `bal_due`) VALUES ('C002','Ivan Bayross','Bandra','Bombay','Maharashtra',400054, 15000);
+INSERT INTO `client_master`(`client_no`, `name`, `address`, `city`, `state`, `pincode`, `bal_due`) VALUES ('C003','Pramada Jaguste', 'Warli', 'Bombay','Maharashtra', 400057, 5000);
+INSERT INTO `client_master`(`client_no`, `name`, `address`, `city`, `state`, `pincode`, `bal_due`) VALUES ('C004','Basu Navindgi', 'Juhu', 'Bombay', 'Maharashtra',400056,0);
