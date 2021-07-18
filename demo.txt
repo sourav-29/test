@@ -1,0 +1,15 @@
+CREATE TABLE Client_Master (client_no varchar(10) PRIMARY KEY, 
+name varchar(20),address varchar(40),city varchar(40),state varchar(20),
+pincode int , bal_due int);
+
+CREATE TABLE Product_Master (product_no varchar(10)PRIMARY KEY,
+description varchar(20),profit_percent int ,unit_measure varchar(40),
+qty_on_hand int , sell_price int ,cost_price int);
+
+CREATE TABLE Salesman_Master (salesman_no varchar(10) PRIMARY KEY,
+name varchar(20),address varchar(40),city varchar(40),state varchar(20), 
+pincode int , sal_amt int,tgt_to_get int);
+
+CREATE TABLE Sales_order (s_order_no varchar(10) PRIMARY KEY,
+s_order_date date,client_no varchar(20), dely_addr varchar(40),salesman_no varchar(20),dely_date date,order_status varchar(20),
+FOREIGN KEY (client_no) REFERENCES Client_Master(client_no),FOREIGN KEY (salesman_no ) REFERENCES Salesman_Master(salesman_no));
