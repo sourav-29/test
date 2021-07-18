@@ -1,1 +1,1 @@
-# testing repository for learning purpose
+# test repository for learning purpose
